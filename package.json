@@ -1,0 +1,13 @@
+{
+
+  "name": "unevent",
+  "version": "0.0.1",
+  "description": "Universal tools for EventEmitter and EventTarget",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myshkouski/unevent"
+  },
+  "author": "Alexei Myshkouski",
+  "license": "MIT"
+}
