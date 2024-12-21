@@ -1,13 +1,30 @@
 {
-
   "name": "unevent",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Universal tools for EventEmitter and EventTarget",
-  "main": "dist/index.js",
+  "main": "dist/node/index.js",
+  "browser": "dist/browser/index.js",
+  "engines": {
+    "node": "^16"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Myshkouski/unevent"
   },
   "author": "Alexei Myshkouski",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitest/browser": "^2.1.8",
+    "@vitest/coverage-v8": "2.1.8",
+    "@vitest/ui": "2.1.8",
+    "playwright": "^1.49.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run"
+  }
 }
